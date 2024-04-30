@@ -1,0 +1,4 @@
+appId: com.bitfinex.bfxrc
+---
+- tapOn:
+  id: close_icon

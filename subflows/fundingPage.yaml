@@ -1,0 +1,25 @@
+appId: com.bitfinex.bfxrc
+---
+- assertVisible:
+    id: "Tab-Funding"
+- tapOn:
+    id: "Tab-Funding"
+- assertVisible:
+    id: "tickers_table_fUSD"
+- tapOn:
+    id: "tickers_table_fUSD"
+- assertVisible:
+    id: "funding_form_rate_input"
+- tapOn:
+    id: "funding_form_min_period_btn"
+    index: 1
+- assertVisible: "Verify your account to Intermediate (or above) in order to proceed"
+- tapOn: "Go back"
+- stopApp:
+    appId: com.bitfinex.bfxrc
+
+
+
+
+
+

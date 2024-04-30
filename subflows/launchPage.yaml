@@ -1,0 +1,27 @@
+appId: com.bitfinex.bfxrc
+---
+- stopApp:
+    appId: com.bitfinex.bfxrc
+- launchApp:
+    appId: com.bitfinex.bfxrc
+- repeat:
+    times: 4
+    commands:
+    - tapOn: "5"
+- runFlow:
+    when:
+      visible: "ANNOUNCEMENTS"
+    commands:
+        - assertVisible: "Okay, .*"
+        - tapOn: "Okay, .*"
+- runFlow:
+    when:
+      visible: "Find a full list of.*"
+    commands:
+         - tapOn: "close_icon"
+- runFlow:
+    when:
+      visible: "is open for new registrations!"
+    commands:
+         - tapOn: "No Thanks"
+

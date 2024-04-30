@@ -1,0 +1,50 @@
+appId: com.bitfinex.bfxrc
+---
+- assertVisible: "Tab-Setting.*"
+- tapOn: "Tab-Setting.*"
+- assertVisible: "P2P"
+- tapOn: "P2P"
+- assertVisible: "Create ad"
+- tapOn: "Home, back"
+- assertVisible: "Lending Pro"
+- tapOn: "Lending Pro"
+- assertVisible: "Verification Required"
+- tapOn: "Close"
+- assertVisible: "Borrow"
+- tapOn: "Borrow"
+- assertVisible: "Verification Required"
+- tapOn: "Verify Now"
+- assertVisible: "Finish Upgrading to Full"
+- tapOn: "Return to Bitfinex Test"
+- runFlow: "launchPage.yaml"
+- tapOn: "Tab-Settings"
+- assertVisible: "Stake"
+- tapOn: "Stake"
+- assertVisible:
+    id: "calculate_rewards_button"
+- tapOn: "Home, back"
+- assertVisible: "Affiliate"
+- tapOn: "Affiliate"
+- assertVisible: "Overview"
+- tapOn: "Home, back"
+- tapOn: "Leaderboard"
+- assertVisible: "Bitfinex Leaderboard"
+- tapOn: "Home, back"
+- assertVisible: "Verification"
+- tapOn: "Verification"
+- assertVisible: "Basic Plus"
+- tapOn: "Return to Bitfinex Test"
+- runFlow: "launchPage.yaml"
+- tapOn: "Tab-Settings"
+- assertVisible: "Reports"
+- tapOn: "Reports"
+- assertVisible: "Account Summary"
+- tapOn: "Home, back"
+- stopApp:
+    appId: com.bitfinex.bfxrc
+
+
+
+
+
+

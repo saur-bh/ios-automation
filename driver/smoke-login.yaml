@@ -1,0 +1,15 @@
+appId: com.bitfinex.bfxrc
+---
+- runFlow:
+    when:
+      visible: "Tailored to you"
+    file: "/Users/100rabh/bitfinex/subflows/loginFlowPage.yaml"
+- runFlow:
+    when:
+      visible:
+        id: "Signup-Navigation-Button"
+    file: "/Users/100rabh/bitfinex/subflows/loginFlowPage.yaml"
+- runFlow: "/Users/100rabh/bitfinex/subflows/launchPage.yaml"
+- runFlow: "/Users/100rabh/bitfinex/subflows/accountPage.yaml"
+- runFlow: "/Users/100rabh/bitfinex/subflows/fundingPage.yaml"
+

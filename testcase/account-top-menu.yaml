@@ -1,0 +1,6 @@
+appId: com.bitfinex.bfxrc
+---
+- runFlow: "/Users/100rabh/bitfinex/subflows/launchPage.yaml"
+- runFlow: "/Users/100rabh/bitfinex/subflows/accountPage.yaml"
+
+

@@ -1,0 +1,51 @@
+appId: com.bitfinex.bfxrc
+---
+- launchApp:
+    appId: com.bitfinex.bfxrc
+    clearState: true 
+    clearKeychain: true 
+- tapOn:
+   id: close_icon
+- tapOn: "Tab-Settings"
+- tapOn: "Lending Pro"
+- tapOn: "Log In"
+- tapOn: "API Key API Key"
+- tapOn: "input"
+- tapOn: "Login-Public-Key-Input 43 symbols"
+- inputText: "9adc54d641d4eeffec2bcce116faa6ce08c8d3135ff"
+- tapOn: "Login-Secret-Key-Input 43 symbols"
+- inputText: "d1e8a0624ff40c7b60375f4476bfb4cf9355b053984"
+- tapOn: "Login-Button"
+- repeat:
+    times: 8
+    commands:
+    - tapOn: "5"
+- runFlow:
+    when:
+      visible: "ANNOUNCEMENTS"
+    commands:
+        - assertVisible: "Okay, .*"
+        - tapOn: "Okay, .*"
+- runFlow:
+    when:
+      visible: "Find a full list of.*"
+    commands:
+         - tapOn: "close_icon"
+- runFlow:
+    when:
+      visible: "for market\nmakers"
+    commands:
+         - tapOn: "close_icon"
+- runFlow:
+    when:
+      visible: "is open for new registrations!"
+    commands:
+         - tapOn: "No Thanks"
+
+
+
+
+
+
+    
+
