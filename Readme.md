@@ -1,8 +1,4 @@
 # Bitfinex -IOS Automation 
-
-
-# Update the samples
-
 Although the samples are checked in, updating them requires a few manual steps:
 
 * xcode is installed 
