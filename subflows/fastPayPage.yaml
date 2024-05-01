@@ -31,7 +31,7 @@ appId: com.bitfinex.bfxrc
 - tapOn:
     id: "close_icon"
 - tapOn: "Shopping"
-- assertVisible: "When you use Bitrefill through our website*"
+- assertVisible: "When you use Bitrefill through our website, Bitfinex will debit the trading Digital Tokens Wallet of your Account in order to pay for your purchases on Bitrefill. Bitrefill requires that you pay in BTC."
 - tapOn: "Home, back"
 - tapOn:
     id: "fastpay_scan_button"
@@ -62,10 +62,8 @@ appId: com.bitfinex.bfxrc
 - tapOn:
     id: "fastpay_address_okay_button"
 - tapOn: "$ 0"
-- inputText: "10"
-- hideKeyboard
-- assertVisible: "$10.00 minimum balance is needed to complete this payment. Your current balance is $2. Please make a deposit in wallet to proceed.\ 
-    Go to deposit screen"
+- inputText: "50"
+- assertVisible: "@saurabhautomation"
 - stopApp:
     appId: com.bitfinex.bfxrc
 
