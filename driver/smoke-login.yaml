@@ -1,5 +1,9 @@
 appId: com.bitfinex.bfxrc
 ---
+- launchApp:
+    appId: com.bitfinex.bfxrc
+- waitForAnimationToEnd:
+    timeout: 5000
 - runFlow:
     when:
       visible: "Tailored to you"

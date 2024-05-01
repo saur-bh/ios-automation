@@ -11,10 +11,10 @@ appId: com.bitfinex.bfxrc
 - tapOn: "Log In"
 - tapOn: "API Key API Key"
 - tapOn: "input"
-- tapOn: "Login-Public-Key-Input 43 symbols"
-- inputText: "9adc54d641d4eeffec2bcce116faa6ce08c8d3135ff"
-- tapOn: "Login-Secret-Key-Input 43 symbols"
-- inputText: "d1e8a0624ff40c7b60375f4476bfb4cf9355b053984"
+- tapOn: "Login-Public-Key-Input.*"
+- inputText: "ea69b2a8517ac37c1499207741c2392566d28a9d880"
+- tapOn: "Login-Secret-Key-Input.*"
+- inputText: "06ecd3c6b560b32003451f244cb302c258eb5ebcd82"
 - tapOn: "Login-Button"
 - repeat:
     times: 8

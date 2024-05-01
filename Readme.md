@@ -20,12 +20,12 @@ Although the samples are checked in, updating them requires a few manual steps:
 
   ` maestro  test driver --output report/test.xml `
 
-![alt text](image.png)
+![alt text](image/image.png)
 - choose option 2 and select device where you have install ap 
-![alt text](image-1.png)
+![alt text](image/image-1.png)
 
 
-![alt text](image-2.png)
+![alt text](image/image-2.png)
 
 - additonally you can start your simulator before.
 
