@@ -1,0 +1,13 @@
+appId: com.bitfinex.bfxrc
+---
+- assertVisible:
+    id: "Tab-Trading"
+- tapOn:
+    id: "Tab-Trading"
+
+
+
+
+
+
+

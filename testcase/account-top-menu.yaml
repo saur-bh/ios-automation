@@ -1,4 +1,6 @@
 appId: com.bitfinex.bfxrc
+tags: 
+  - smoke
 ---
 - launchApp:
     appId: com.bitfinex.bfxrc

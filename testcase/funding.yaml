@@ -1,4 +1,7 @@
+# This is to test funding screen 
 appId: com.bitfinex.bfxrc
+tags: 
+  - smoke
 ---
 - launchApp:
     appId: com.bitfinex.bfxrc

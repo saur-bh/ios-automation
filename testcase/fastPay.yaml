@@ -1,4 +1,7 @@
+# This is to test funding screen 
 appId: com.bitfinex.bfxrc
+tags: 
+  - smoke
 ---
 - launchApp:
     appId: com.bitfinex.bfxrc
@@ -7,17 +10,11 @@ appId: com.bitfinex.bfxrc
 - runFlow:
     when:
       visible: "Tailored to you"
-    file: "/Users/100rabh/bitfinex/subflows/loginFlowPage.yaml"
+    commands:
+         - tapOn: "close_icon"
 - runFlow:
     when:
-      visible:
-        id: "Signup-Navigation-Button"
+      visible: "Login-Navigation-Button Signup-Navigation-Button"
     file: "/Users/100rabh/bitfinex/subflows/loginFlowPage.yaml"
-- startRecording: report/recording/SmokeTest
 - runFlow: "/Users/100rabh/bitfinex/subflows/launchPage.yaml"
-- runFlow: "/Users/100rabh/bitfinex/subflows/accountPage.yaml"
-- runFlow: "/Users/100rabh/bitfinex/subflows/fundingPage.yaml"
-- stopRecording
-
-
-
+- runFlow: "/Users/100rabh/bitfinex/subflows/fastPayPage.yaml"
