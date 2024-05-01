@@ -1,41 +1,34 @@
 appId: com.bitfinex.bfxrc
 ---
 - assertVisible:
-    id: "Tab-Funding"
+    id: "Tab-Trading"
 - tapOn:
-    id: "Tab-Funding"
+    id: "Tab-Trading"
 - assertVisible:
-    id: "tickers_table_fUSD"
+    id: "segment_derivative"
 - tapOn:
-    id: "tickers_table_fUSD"
-- swipe:
-    start: "45%,93%"
-    end: "49%,35%"
-    duration: 1937
-- assertVisible:
-    id: "funding_form_rate_input"
+    id: "segment_derivative"
+- assertVisible: "DERIVATIVES PROHIBITED PERSONS"
+- repeat:
+    times: 4
+    commands:
+    - swipe:
+        start: "48%,81%"
+        end: "49%,23%"
+        duration: 10000
 - tapOn:
-    id: "funding_form_rate_input"
-- inputText: "2"
-- hideKeyboard
+    id: "submit_button"
+- assertVisible: "DERIVATIVES TERMS OF SERVICE"
+- repeat:
+    times: 10
+    commands:
+    - swipe:
+        start: "48%,81%"
+        end: "49%,23%"
+        duration: 200000
 - tapOn:
-    id: "funding_form_amount_input"
-- inputText: "123"
-- hideKeyboard
-- tapOn:
-    id: "funding_form_min_period_btn"
-    index: 1
-- assertVisible:
-    id: "funding_form_bid_btn"
-    enabled: true
-- tapOn:
-    id: "funding_form_bid_btn"
-- assertVisible: "Are you sure you want to Bid above the lowest rate?"
-- tapOn: "Yes"
-- assertVisible: "Please confirm the following order:  Limit Bid at 2% for 123 USD for 120 days"
-- tapOn: "Cancel"
-- stopApp:
-    appId: com.bitfinex.bfxrc
+    id: "submit_button"
+
 
 
 

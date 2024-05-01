@@ -33,7 +33,7 @@ Although the samples are checked in, updating them requires a few manual steps:
 * Some Error 
  type maestro  
 - ERROR: JAVA_HOME is set to an invalid directory: /Library/Java/Home
- Set export JAVA_HOME=`/usr/libexec/java_home`
+  export JAVA_HOME=`/usr/libexec/java_home`
 
 
 

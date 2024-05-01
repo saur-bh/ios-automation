@@ -1,9 +1,83 @@
 appId: com.bitfinex.bfxrc
 ---
 - assertVisible:
-    id: "Tab-Trading"
+    id: "Tab-FastPay"
 - tapOn:
-    id: "Tab-Trading"
+    id: "Tab-FastPay"
+- assertVisible:
+    id: "fastpay_header_info_button"
+- tapOn:
+    id: "fastpay_header_info_button"
+- assertVisible: "What is Fast Pay.*"
+- assertVisible: "What is my spending limit.*"
+- tapOn: "How to set up faster payments.*"
+- assertVisible: "How to skip 2FA when using the Fast Pay feature"
+- tapOn:
+    id: "close_icon"
+- tapOn:
+    id: "fastpay_header_info_close_button"
+- assertVisible:
+    id: "fastpay_header_setting_button"
+- tapOn:
+    id: "fastpay_header_setting_button"
+- assertVisible: "Turn on to skip 2FA when paying invoices less than the customized 24h spending limit"
+- tapOn: "Home, back"
+- tapOn: " Merchants"
+- assertVisible: "TERMS OF SERVICE"
+- tapOn:
+    id: "close_icon"
+- tapOn: "SWAPX"
+- assertVisible: "SWAPX Notice"
+- tapOn:
+    id: "close_icon"
+- tapOn: "Shopping"
+- assertVisible: "When you use Bitrefill through our website*"
+- tapOn: "Home, back"
+- tapOn:
+    id: "fastpay_scan_button"
+- assertVisible: "Scan or enter only Lightning (BTC), USDt (Tron), USDt (Solana), USDt (Liquid) and USDt (Polygon) addresses"
+- assertVisible:
+    id: "Login-Button"
+- tapOn:
+    id: "fastpay_address_cancel_button"
+- tapOn:
+    id: "fastpay_receive_button"
+- tapOn: "BTC fast_pay_toggle_btc_view_mode Lightning (BTC) $0"
+- tapOn: "$ 0"
+- inputText: "10"
+- tapOn: "Generate Invoice"
+- assertVisible: "Scan the QR code below with your favourite lightning wallet"
+- tapOn: "Home, back"
+- tapOn:
+    id: "fastpay_send_button"
+- assertVisible: "Send BTC fast_pay_toggle_btc_view_mode Lightning (BTC) $0 USDt fast_pay_toggle_btc_view_mode USDt (Tron) $2.00 USDt fast_pay_toggle_btc_view_mode USDt (Solana) $2.00 USDt fast_pay_toggle_btc_view_mode USDt (Liquid) $2.00 USDt fast_pay_toggle_btc_view_mode USDt (Polygon) $2.00 Vertical scroll bar, 1 page Horizontal scroll bar, 1 page"
+- assertVisible: "USDt fast_pay_toggle_btc_view_mode USDt (Tron) $2.00"
+- tapOn: "USDt fast_pay_toggle_btc_view_mode USDt (Tron) $2.00"
+- tapOn:
+    id: "fastpay_address_input"
+- eraseText 
+- inputText: "@saurabhautomation"
+- assertVisible: "@saurabhautomation"
+- tapOn: "@saurabhautomation"
+- tapOn:
+    id: "fastpay_address_okay_button"
+- tapOn: "$ 0"
+- inputText: "10"
+- hideKeyboard
+- assertVisible: "$10.00 minimum balance is needed to complete this payment. Your current balance is $2. Please make a deposit in wallet to proceed.\ 
+    Go to deposit screen"
+- stopApp:
+    appId: com.bitfinex.bfxrc
+
+
+
+
+
+
+
+
+
+
 
 
 
