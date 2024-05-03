@@ -14,8 +14,8 @@ tags:
 - runFlow:
     when:
       visible: "Login-Navigation-Button Signup-Navigation-Button"
-    file: "/Users/100rabh/bitfinex/subflows/loginFlowPage.yaml"
-- runFlow: "/Users/100rabh/bitfinex/subflows/launchPage.yaml"
-- runFlow: "/Users/100rabh/bitfinex/subflows/accountPage.yaml"
+    file: "../subflows/loginFlowPage.yaml"
+- runFlow: "../subflows/launchPage.yaml"
+- runFlow: "../subflows/accountPage.yaml"
 
 

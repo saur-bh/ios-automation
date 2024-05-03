@@ -33,8 +33,10 @@ Although the samples are checked in, updating them requires a few manual steps:
 * Some Error 
  type maestro  
 - ERROR: JAVA_HOME is set to an invalid directory: /Library/Java/Home
-  export JAVA_HOME=`/usr/libexec/java_home`
-
+Step 1- Edit .zshrc file or Create .zshrc file (if not present)
+Step 2- export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home
+  export PATH=$JAVA_HOME/bin:$PATH
+Step 3- source .zshrc 
 
 
 

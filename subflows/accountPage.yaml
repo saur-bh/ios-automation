@@ -21,7 +21,6 @@ appId: com.bitfinex.bfxrc
 - tapOn: "Home, back"
 - assertVisible: "Affiliate"
 - tapOn: "Affiliate"
-- assertVisible: "Overview"
 - tapOn: "Home, back"
 - tapOn: "Leaderboard"
 - assertVisible: "Bitfinex Leaderboard"

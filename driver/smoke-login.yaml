@@ -1,22 +1,12 @@
 appId: com.bitfinex.bfxrc
+name: Smoke Test execution for IOS 
+onFlowStart:
+  - runFlow: "../subflows/loginFlowPage.yaml"
 ---
-- launchApp:
-    appId: com.bitfinex.bfxrc
-- waitForAnimationToEnd:
-    timeout: 5000
-- runFlow:
-    when:
-      visible: "Tailored to you"
-    file: "/Users/100rabh/bitfinex/subflows/loginFlowPage.yaml"
-- runFlow:
-    when:
-      visible:
-        id: "Signup-Navigation-Button"
-    file: "/Users/100rabh/bitfinex/subflows/loginFlowPage.yaml"
 - startRecording: report/recording/SmokeTest
-- runFlow: "/Users/100rabh/bitfinex/subflows/launchPage.yaml"
-- runFlow: "/Users/100rabh/bitfinex/subflows/accountPage.yaml"
-- runFlow: "/Users/100rabh/bitfinex/subflows/fundingPage.yaml"
+- runFlow: "../subflows/launchPage.yaml"
+- runFlow: "../subflows/accountPage.yaml"
+- runFlow: "../subflows/fundingPage.yaml"
 - stopRecording
 
 
