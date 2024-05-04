@@ -1,4 +1,7 @@
 appId: com.bitfinex.bfxrc
+name: Derivative flow verification
+onFlowStart:
+  - runFlow: "../subflows/passcodePage.yaml"
 ---
 - assertVisible:
     id: "Tab-Trading"

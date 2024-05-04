@@ -1,0 +1,11 @@
+appId: com.bitfinex.bfxrc
+---
+- stopApp:
+    appId: com.bitfinex.bfxrc
+- launchApp:
+    appId: com.bitfinex.bfxrc
+- repeat:
+    while:
+      visible: "5"
+    commands:
+    - tapOn: "5"

@@ -1,13 +1,8 @@
 appId: com.bitfinex.bfxrc
+name: Lanuch flow 
+onFlowStart:
+  - runFlow: "../subflows/passcodePage.yaml"
 ---
-- stopApp:
-    appId: com.bitfinex.bfxrc
-- launchApp:
-    appId: com.bitfinex.bfxrc
-- repeat:
-    times: 4
-    commands:
-    - tapOn: "5"
 - runFlow:
     when:
       visible: "ANNOUNCEMENTS"

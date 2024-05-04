@@ -1,4 +1,7 @@
 appId: com.bitfinex.bfxrc
+name: Account Page verification
+onFlowStart:
+  - runFlow: "../subflows/passcodePage.yaml"
 ---
 - assertVisible: "Tab-Setting.*"
 - tapOn: "Tab-Setting.*"

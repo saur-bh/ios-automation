@@ -1,4 +1,7 @@
 appId: com.bitfinex.bfxrc
+name: FastPay flow verification
+onFlowStart:
+  - runFlow: "../subflows/passcodePage.yaml"
 ---
 - assertVisible:
     id: "Tab-FastPay"
