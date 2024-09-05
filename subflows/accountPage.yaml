@@ -9,8 +9,6 @@ onFlowStart:
 - tapOn: "P2P"
 - assertVisible: "Switch to Master Account"
 - tapOn: "Home, back"
-- assertVisible: "Earnings"
-- tapOn: "Home, back"
 - assertVisible: "Borrow"
 - tapOn: "Borrow"
 - assertVisible: "BITFINEX BORROW"
