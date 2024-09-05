@@ -7,7 +7,7 @@ appId: com.bitfinex.bfxrc
 - tapOn:
    id: close_icon
 - tapOn: "Tab-Settings"
-- tapOn: "Log In"
+- tapOn: "Login-Navigation-Button"
 - tapOn: "API Key API Key"
 - tapOn: "input"
 - tapOn: "Login-Public-Key-Input.*"
