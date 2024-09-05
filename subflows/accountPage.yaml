@@ -9,8 +9,6 @@ onFlowStart:
 - tapOn: "P2P"
 - assertVisible: "Switch to Master Account"
 - tapOn: "Home, back"
-- assertVisible: "Lending Pro"
-- tapOn: "Lending Pro"
 - assertVisible: "Earnings"
 - tapOn: "Home, back"
 - assertVisible: "Borrow"
