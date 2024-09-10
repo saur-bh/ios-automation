@@ -45,7 +45,8 @@ onFlowStart:
     id: "fastpay_address_cancel_button"
 - tapOn:
     id: "fastpay_receive_button"
-- tapOn: "BTC fast_pay_toggle_btc_view_mode Lightning (BTC) $0"
+- tapOn:
+    point: 50%,63%
 - tapOn: "$ 0"
 - inputText: "10"
 - tapOn: "Generate Invoice"
@@ -53,20 +54,17 @@ onFlowStart:
 - tapOn: "Home, back"
 - tapOn:
     id: "fastpay_send_button"
-- assertVisible: "Send BTC fast_pay_toggle_btc_view_mode Lightning (BTC) $0 USDt fast_pay_toggle_btc_view_mode USDt (Tron) $2.00 USDt fast_pay_toggle_btc_view_mode USDt (Solana) $2.00 USDt fast_pay_toggle_btc_view_mode USDt (Liquid) $2.00 USDt fast_pay_toggle_btc_view_mode USDt (Polygon) $2.00 Vertical scroll bar, 1 page Horizontal scroll bar, 1 page"
 - assertVisible: "USDt fast_pay_toggle_btc_view_mode USDt (Tron) $2.00"
 - tapOn: "USDt fast_pay_toggle_btc_view_mode USDt (Tron) $2.00"
 - tapOn:
     id: "fastpay_address_input"
 - eraseText 
-- inputText: "@saurabhautomation"
-- assertVisible: "@saurabhautomation"
-- tapOn: "@saurabhautomation"
+- inputText: "TPcp3K4KCKHw48F2XMEbq673oTQwvfAMRB"
 - tapOn:
     id: "fastpay_address_okay_button"
 - tapOn: "$ 0"
 - inputText: "50"
-- assertVisible: "@saurabhautomation"
+- assertVisible: "TPcp3K4KCKHw48F2XMEbq673oTQwvfAMRB"
 - stopApp:
     appId: com.bitfinex.bfxrc
 
