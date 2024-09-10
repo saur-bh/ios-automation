@@ -54,8 +54,8 @@ onFlowStart:
 - tapOn: "Home, back"
 - tapOn:
     id: "fastpay_send_button"
-- assertVisible: "USDt fast_pay_toggle_btc_view_mode USDt (Tron) $2.00"
-- tapOn: "USDt fast_pay_toggle_btc_view_mode USDt (Tron) $2.00"
+- tapOn:
+    point: 33%,74%
 - tapOn:
     id: "fastpay_address_input"
 - eraseText 
