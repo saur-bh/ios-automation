@@ -66,7 +66,7 @@ onFlowStart:
 - tapOn: "$ 0"
 - inputText: "12"
 - hideKeyboard
-- assertVisible: "$12.00 minimum balance is needed to complete this payment. Your current balance is $2..*"
+- assertVisible: ".*Go to deposit screen.*"
 - assertVisible: "TPcp3K4KCKHw48F2XMEbq673oTQwvfAMRB"
 - tapOn: "$"
 - eraseText 
