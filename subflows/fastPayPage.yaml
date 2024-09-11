@@ -23,7 +23,7 @@ onFlowStart:
     id: "fastpay_header_setting_button"
 - tapOn:
     id: "fastpay_header_setting_button"
-- assertVisible: "Turn on to skip 2FA when paying invoices less than the customized 24h spending limit"
+- assertVisible: "Skip 2FA for small payments"
 - tapOn: "Home, back"
 - tapOn: " Merchants"
 - assertVisible: "TERMS OF SERVICE"
@@ -64,9 +64,21 @@ onFlowStart:
 - tapOn:
     id: "fastpay_address_okay_button"
 - tapOn: "$ 0"
-- inputText: "50"
+- inputText: "12"
 - hideKeyboard
+- assertVisible: "$12.00 minimum balance is needed to complete this payment. Your current balance is $2..*"
 - assertVisible: "TPcp3K4KCKHw48F2XMEbq673oTQwvfAMRB"
+- tapOn: "$"
+- eraseText 
+- inputText: "1"
+- tapOn: "fastpay_internal_transfers"
+- tapOn: "fastpay_internal_transfers"
+- assertVisible: "Internal transfer within Bitfinex"
+- tapOn:
+    id: "close_icon"
+- tapOn: "Pay"
+- assertVisible: "Payment Completed"
+- tapOn: "Home"
 - stopApp:
     appId: com.bitfinex.bfxrc
 
