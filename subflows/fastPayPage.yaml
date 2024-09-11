@@ -1,4 +1,4 @@
-appId: com.bitfinex.bfxrc
+appId: com.bitfappiuminex.bfxrc
 name: FastPay flow verification
 onFlowStart:
   - runFlow: "../subflows/passcodePage.yaml"
@@ -46,7 +46,7 @@ onFlowStart:
 - tapOn:
     id: "fastpay_receive_button"
 - tapOn:
-    point: 50%,63%
+   point: 56%,55%
 - tapOn: "$ 0"
 - inputText: "10"
 - tapOn: "Generate Invoice"
@@ -55,15 +55,17 @@ onFlowStart:
 - tapOn:
     id: "fastpay_send_button"
 - tapOn:
-    point: 33%,74%
+   point: 35%,63%
 - tapOn:
     id: "fastpay_address_input"
 - eraseText 
 - inputText: "TPcp3K4KCKHw48F2XMEbq673oTQwvfAMRB"
+- hideKeyboard
 - tapOn:
     id: "fastpay_address_okay_button"
 - tapOn: "$ 0"
 - inputText: "50"
+- hideKeyboard
 - assertVisible: "TPcp3K4KCKHw48F2XMEbq673oTQwvfAMRB"
 - stopApp:
     appId: com.bitfinex.bfxrc
